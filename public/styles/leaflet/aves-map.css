@@ -1,0 +1,98 @@
+/* Frontend Leaflet Map for Site Selection */
+
+#map-container {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#map-container #map {
+   height: 100%;
+   width: 100%;
+}
+#map-container #leaflet-sidebar.leaflet-control {
+    padding: 4px 12px;
+}
+#map-container #leaflet-sidebar ul#specimen-list {
+    list-style-type: none;
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+#map-container #leaflet-sidebar ul#specimen-list li {
+    line-height: 2.0;
+    cursor: pointer;
+    padding: 0 0 0 5px;
+}
+#map-container #leaflet-sidebar ul#specimen-list li:nth-child(even) {
+    background-color: rgba(230,230,230,0.4);
+}
+#map-container #leaflet-sidebar ul#specimen-list li:hover {
+    background-color: rgba(210,210,210,0.8);
+}
+form.leaflet-control-layers-list .leaflet-control-layers-base label {
+    line-height: 1.4;
+}
+#map-container .leaflet-container a.leaflet-popup-close-button {
+color: #FFFFFF !important;
+}
+#map-container .leaflet-sidebar a.close {
+    font-size: 24px;
+    color: #000000;
+    right: 12px;
+    top: 16px;
+    z-index: 10000;
+    opacity: 0.5;
+}
+.btn-leaflet-sidebar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3000;
+}
+.btn-leaflet-sidebar-open i.fa-bars {
+    font-size: 28px;
+    color: #621108;
+}
+.leaflet-control-container .leaflet-sidebar {
+/*    width: 300px; */
+}
+
+footer#map-footer {
+    width: 100%;
+    padding-top: 8px;
+}
+footer#map-footer p {
+    font-size: 12px;
+}
+footer#map-footer #map-warning {
+    margin-left: 10px;
+}
+.leaflet-popup-content-wrapper {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    border: 2px solid #FFFFFF;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    background: transparent;
+    margin: 8px 12px;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-window {
+    opacity: 1.0;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+    font-size: 100% !important;
+    line-height: 1.5em !important;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    max-width: 240px;
+}
+.ui-infowindow .leaflet-popup-window span.infowindow-label {
+    font-weight: 500;
+    opacity: 1.0;
+}
+@media (max-width: 768px) {
+    #map-container {
+        border: 1px solid #621108;
+    }
+}

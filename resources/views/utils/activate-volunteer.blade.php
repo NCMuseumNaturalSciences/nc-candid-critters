@@ -1,0 +1,1 @@
+<a href="{{ action('Admin\DatatablesController@activateDatatableVolunteer', $id) }}" class="btn btn-xs btn-custom-success">Activate DT</a>

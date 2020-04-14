@@ -1,0 +1,12 @@
+/* DataTables Editor Styles */
+/* Overrides default and bootstrap vendor styling */
+
+/* Radiobutton inline Controls */
+div.DTE_Inline div.DTE_Inline_Field div.DTE_Field div input {
+    width: auto;
+    display: inline;
+}
+div.DTE_Inline div.DTE_Inline_Field div.DTE_Field div label {
+    width: auto;
+    display: inline;
+}

@@ -1,0 +1,799 @@
+/* Administrative Section Stylesheet */
+/* Based on CoreUI */
+/* Coreui Overrides */
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+body, a, li, p, td, th, button, .datatables_wrapper, .dataTables_info, label {
+    font-family: Roboto, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+#sidebar #sidebar-nav ul li a {
+    letter-spacing: 0.02em;
+    font-family: 'Roboto Light', sans-serif;
+}
+a {
+    color: #025E7D;
+}
+a:hover,
+a:active {
+    color: #014860;
+}
+.bg-success,
+.bg-danger {
+    color: #FFFFFF !important;
+}
+
+/* Lists ------------------------------------------------------- */
+
+.card-body > form >fieldset {
+    padding: 15px;
+}
+ul.info-list {
+    padding: 10px;
+    list-style-type: none;
+    margin-left: 0;
+}
+ul.info-list li {
+    line-height: 1.4;
+}
+ul.info-list::after {
+    clear: both;
+}
+ul.legend-list {
+    margin-left: 1.5em;
+    padding: 0;
+    list-style-type: none;
+    padding: 0;
+}
+ul.legend-list > li {
+    line-height: 1.5em;
+}
+ul.legend-list > li > span {
+    width: 25px;
+    display: inline-block;
+}
+ul.legend-list > li:before {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    float: left;
+    padding-top: 1px;
+    line-height: 2em;
+    font-size: 0.7em;
+    margin-left: -1.5em;
+    color: #29363D;
+}
+ul.stats li .btn-outline,
+ul.stats li .btn .count{
+    background: #FFFFFF;
+}
+ul.stats li .btn-outline-primary:hover,
+ul.stats li .btn-outline-danger:hover,
+ul.stats li .btn-outline-success:hover {
+    background-color: rgba(235, 235, 235, 1);
+}
+ul.stats li .btn-outline-primary:hover {
+    color: #20A8D8;
+}
+ul.stats li .btn-outline-danger:hover {
+    color: #F86C6B;
+}
+
+ul.stats li .btn-outline-success:hover {
+    color: #4DBD74;
+}
+ul.stats .badge {
+    margin-left: 4px;
+    padding: 4px 6px;
+}
+ul.stats {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+ul.check-list-results,
+ul.model-info {
+    list-style-type: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+p.list-header {
+    margin-bottom: 0;
+}
+ul.model-info li {
+    font-size: 115%;
+    font-weight: 400;
+    line-height: 2;
+}
+ul.check-list-results {
+    width: 320px;
+    border-top: 1px solid #DCDCDC;
+}
+ul.check-list-results li {
+    line-height: 1.75;
+}
+ul.check-list-results li:nth-child(even) {
+    background-color: rgba(230,230,230,0.7);
+}
+ul.check-list-results li span {
+    width: 270px;
+    display: inline-block;
+}
+
+/* Modals ------------------------------------------------ */
+
+#checkInventoryModal .modal-body {
+    padding: 15px;
+}
+@media screen and (min-width: 992px) {
+    .modal .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+/* Forms -------------------------------- */
+
+fieldset.stripe-fieldset row:nth-child(even) {
+    background: rgba(220,220,220,0.4);
+}
+.input-group-prepend {
+    padding: 0.25rem 0.4rem;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3e515b;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #f0f3f5;
+    border: 1px solid #c2cfd6;
+}
+.input-group-prepend > .input-group-text {
+    border: none;
+}
+.select-group {
+    margin-right: 15px;
+}
+#form-wrapper {
+    width: 100%;
+    margin-top: 6px;
+    background: #FFFFFF;
+    margin-left: 0px;
+}
+.inline.form-right button {
+    display: inline;
+}
+button.float-right {
+    text-align: right;
+    float: right;
+}
+
+#form-wrapper form,
+#form-wrapper div.form-inline {
+    padding: 10px 15px 10px 15px;
+}
+.btn-col {
+    padding-top: 16px;
+}
+h5.inline-label {
+    font-size: 14px;
+}
+#form-wrapper .form-inline,
+#form-wrapper .form-inline label,
+#form-wrapper form,
+#form-wrapper form label,
+#form-wrapper .form-group {
+    display: inline-block;
+}
+.form-group button {
+    margin-top: 5px;
+}
+#datatable tbody tr.selected {
+    background-color: rgba(150,150,150,0.4);
+}
+#datatable tbody tr.selected td {
+    color: #29363D;
+}
+#datatable tbody tr.selected td a {
+    color: #29363D;
+}
+#datatable_wrapper .dt-buttons.btn-group button.btn-dt {
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+/*
+.btn-group-xs > .btn,
+.btn-xs {
+    padding  : .7rem .4rem;
+    font-size  : .85rem;
+    line-height  : .5;
+    border-radius : .2rem;
+}
+*/
+#datatable_wrapper #datatable tbody tr .btn.btn-xs.btn-dt-row {
+    font-size: 10px;
+    padding: 4px 4px;
+}
+button.btn-dt-row,
+a.btn-dt-row {
+    margin-right: 4px;
+}
+.form-right.inline .input-group-btn h5.btn-group-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    display: inline-block;
+}
+.form-right.inline .input-group-btn button {
+    margin-left: 5px;
+    display: inline-block;
+}
+input.parsley-error {
+    color: #B94A48 !important;
+    background-color: #F2DEDE !important;
+    border: 1px solid #EED3D7 !important;
+}
+ul.parsley-errors-list.filled {
+    background: rgba(255,0,0,0.3);
+    list-style-type: none;
+}
+ul.parsley-errors-list.filled li {
+    padding: 4px 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    #datatable_wrapper table.dataTable tbody tr td:first-child {
+
+    }
+}
+
+/* sidebars and Navbars ------------------ */
+
+#sidebar nav#sidebar-nav ul li,
+#sidebar nav#sidebar-nav ul li a,
+#sidebar nav#sidebar-nav a {
+    font-size: 12px;
+}
+
+li.nav-item hr {
+    margin: 4px 0;
+}
+
+a#brand.navbar-brand {
+    background-image: url("../images/nccc_web-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px auto;
+}
+.app-header.navbar {
+}
+
+.sidebar-minimized .sidebar .nav-link ion-icon,
+.sidebar-minimized .sidebar .navbar .dropdown-toggle ion-icon,
+.navbar .sidebar-minimized .sidebar .dropdown-toggle ion-icon {
+    display: block;
+    float: left;
+    width: 50px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.sidebar .nav-link ion-icon,
+.sidebar .navbar .dropdown-toggle ion-icon,
+.navbar .sidebar .dropdown-toggle ion-icon {
+    display: inline-block;
+    width: 20px;
+    margin: 0 0.2rem 0 0;
+    font-size: 14px;
+    color: #DCDCDC;
+    text-align: center
+}
+main.main .container-fluid .inner-wrapper {
+    margin-top: 1.0rem;
+}
+.sidebar-hidden .sidebar {
+    margin-left: -240px;
+}
+.sidebar-fixed .sidebar,
+.sidebar .nav {
+    width: 240px;
+}
+.sidebar-fixed .main, .sidebar-fixed .app-footer {
+    margin-left: 240px;
+}
+.sidebar .nav-dropdown-items li.nav-item {
+    padding-left: 10px;
+    background-color: #42545E;
+}
+.sidebar .nav-link span.icon-couple ion-icon:first-child {
+    width: 18px;
+    margin: 0;
+}
+.show-button {
+    margin-right: 12px;
+    display: inline-block;
+    position: relative;
+}
+.section-wrapper.row {
+    margin-bottom: 15px;
+}
+
+/* Tables ------------------------------------------------------------------------- */
+
+.card#card-datatable,
+.card#card-datatable .card-body,
+.card-header,
+.card#card-datatable .card-header form,
+.card#card-datatable .card-header form label,
+.card#card-datatable .card-header form input,
+.cared .card-header form button,
+.card#card-datatable .card-header button,
+.card#card-datatable .card-body table,
+.card#card-datatable .card-body table thead,
+.card#card-datatable .card-body table thead tr th,
+.card#card-datatable .card-body table tbody,
+.card#card-datatable .card-body table tbody tr,
+.card#card-datatable .card-body table tbody tr td,
+.card#card-datatable .card-body table tbody td a,
+.card .card-body table td,
+.card .card-body table th {
+    font-size: 12px;
+}
+
+.card-body table#datatable {
+    max-width: 100%;
+    position: relative;
+    width: 100% !important;
+}
+.dashboard-stats-wrapper {
+   background: #FFFFFF;
+    padding: 15px;
+}
+.dashboard-stats-wrapper ul.stats-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-stats-wrapper ul.stats-list li {
+    line-height: 1.75;
+    border-bottom: 1px solid rgba(220,220,220,0.5);
+}
+.dashboard-stats-wrapper ul.stats-list li span {
+    width: 225px;
+    display: inline-block;
+}
+
+#datatable_wrapper table.dataTable tbody th,
+#datatable_wrapper table.dataTable tbody td {
+    padding: 8px 4px;
+}
+
+.card-show .table-responsive table tbody th {
+    font-weight: 500;
+}
+.card-show .table-responsive table tbody tr.title-row th {
+    font-weight: 700;
+}
+.table-responsive table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(220,220,220, 0.3);
+}
+.table-responsive table.table-striped tbody tr.title-row {
+    background-color: #FFFFFF;
+}
+table tbody tr td.bg-success,
+table tbody tr td.bg-danger {
+    text-align: center;
+}
+table tbody tr td.bg-success i,
+table tbody tr td.bg-danger i {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+table tbody tr td.action-col .btn {
+    margin-left: 10px;
+}
+
+.table-responsive table.table th,
+.table-responsive table.table td {
+    padding: 0.25rem;
+}
+
+button.btn.btn-xs.dt-header-button {
+    margin-right: 10px;
+    margin-top: 0;
+    display: inline;
+    float: left;
+}
+.card-header a.btn.btn-header {
+    margin-top: 5px;
+}
+
+
+form#search-form {
+    min-width: 80%;
+}
+.filter-wrapper form label {
+    text-align: left;
+}
+#search-form select.form-control.input-sm {
+    height: 36px;
+    font-size: 16px;
+    -webkit-appearance: menulist;
+}
+.card-filter .card-body form {
+    padding: 5px 10px 5px 10px;
+}
+
+.btn-filter-group {
+    margin-top: 28px;
+    float: left;
+    display: inline-block;
+}
+/*
+#search-form {
+    background: #FFFFFF;
+}
+#search-form .form-group.btn-group .btn {
+    margin-top: 8px;
+}
+.form-group.form-inline label {
+    padding-right: 10px;
+    text-align: left;
+}
+#search-form label {
+    font-size: 16px;
+}
+.search-wrapper h3 span.link-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #29363D;
+}
+.search-wrapper h3 span.link-text i {
+    padding-left: 10px;
+}
+*/
+
+
+.card-body table#datatable tbody tr td.success-cell {
+    background-color: #00813F;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.card-body table#datatable tbody tr td.danger-cell {
+    background-color: #B82C00;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.card-body table#datatable tbody tr td.warning-cell {
+    background-color: #E86900;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 102;
+    background: rgba(50,50,50,0.5);
+}
+#datatable tbody tr.selected {
+    background-color: rgba(150,150,150,0.4);
+}
+#datatable tbody tr.selected td {
+    color: #29363D;
+}
+#datatable tbody tr.selected td a {
+    color: #29363D;
+}
+
+/* Template Adjustments / UI Components -------------------------------------- */
+
+h4.card-subtitle {
+    margin-top: 0;
+    font-size: 21px;
+    color: rgb(31, 37, 40);
+    margin-bottom: 0.75rem;
+}
+.inner-wrapper > h2 {
+    font-size: 24px;
+}
+.inner-wrapper .card .card-header {
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-body .btn.btn-success,
+
+.card-body .btn.btn-custom-create,
+.card-body .btn.btn-custom-success,
+.card-body .btn.btn-custom-update,
+.card-body .btn.btn-custom-view {
+    font-size: 12px;
+}
+
+/* Bootswatch Themes Crossovers */
+
+
+.btn-primary-pulse {
+    color: #fff;
+    background-color: #593196;
+    border-color: #593196;
+}
+
+.btn-primary-pulse:hover {
+    color: #fff;
+    background-color: #482879;
+    border-color: #422470;
+}
+
+.btn-primary-pulse:focus, .btn-primary-pulse.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+}
+
+.btn-primary-pulse.disabled, .btn-primary-pulse:disabled {
+    color: #fff;
+    background-color: #593196;
+    border-color: #593196;
+}
+
+.btn-primary-pulse:not(:disabled):not(.disabled):active, .btn-primary-pulse:not(:disabled):not(.disabled).active,
+.show > .btn-primary-pulse.dropdown-toggle {
+    color: #fff;
+    background-color: #422470;
+    border-color: #3c2166;
+}
+
+.btn-primary-pulse:not(:disabled):not(.disabled):active:focus, .btn-primary-pulse:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary-pulse.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+}
+
+
+.btn-outline-primary-pulse {
+    color: #593196;
+    background-color: transparent;
+    background-image: none;
+    border-color: #593196;
+    background-color: #FFFFFF;
+}
+
+.btn-outline-primary-pulse:hover {
+    color: #fff;
+    background-color: #593196;
+    border-color: #593196;
+}
+
+.btn-outline-primary-pulse:focus,
+.btn-outline-primary-pulse.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+}
+
+.btn-outline-primary-pulse.disabled, .btn-outline-primary-pulse:disabled {
+    color: #593196;
+    background-color: transparent;
+}
+
+.btn-outline-primary-pulse:not(:disabled):not(.disabled):active,
+.btn-outline-primary-pulse:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary-pulse.dropdown-toggle {
+    color: #fff;
+    background-color: #593196;
+    border-color: #593196;
+}
+
+.btn-outline-primary-pulse:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary-pulse:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary-pulse.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(89, 49, 150, 0.5);
+}
+
+/* Custom Buttons ------------------------------ */
+
+.btn-custom-update {
+    color: #FFFFFF;
+    background-color: #E86900;
+    border-color: #9A4600;
+}
+
+.btn-custom-update:hover,
+.btn-custom-update:focus,
+.btn-custom-update:active,
+.btn-custom-update.active,
+.open .dropdown-toggle.btn-custom-update {
+    color: #FFFFFF;
+    background-color: #BC5500;
+    border-color: #9A4600;
+}
+
+.btn-custom-update:active,
+.btn-custom-update.active,
+.open .dropdown-toggle.btn-custom-update {
+    background-image: none;
+}
+
+.btn-custom-update.disabled,
+.btn-custom-update[disabled],
+fieldset[disabled] .btn-custom-update,
+.btn-custom-update.disabled:hover,
+.btn-custom-update[disabled]:hover,
+fieldset[disabled] .btn-custom-update:hover,
+.btn-custom-update.disabled:focus,
+.btn-custom-update[disabled]:focus,
+fieldset[disabled] .btn-custom-update:focus,
+.btn-custom-update.disabled:active,
+.btn-custom-update[disabled]:active,
+fieldset[disabled] .btn-custom-update:active,
+.btn-custom-update.disabled.active,
+.btn-custom-update[disabled].active,
+fieldset[disabled] .btn-custom-update.active {
+    background-color: #E86900;
+    border-color: #9A4600;
+}
+
+.btn-custom-update .badge {
+    color: #E86900;
+    background-color: #FFFFFF;
+}
+
+.btn-custom-destroy {
+    background-color: #B82C00;
+    border-color: #B82C00;
+    color: #FFFFFF;
+}
+.btn-custom-destroy:hover,
+.btn-custom-destroy:focus,
+.btn-custom-destroy:active,
+.btn-custom-destroy.active {
+    background-color: #9f2600;
+    border-color: #852000;
+    color: #FFFFFF;
+}
+.btn-custom-destroy.disabled:hover,
+.btn-custom-destroy.disabled:focus,
+.btn-custom-destroy.disabled:active,
+.btn-custom-destroy.disabled.active,
+.btn-custom-destroy[disabled]:hover,
+.btn-custom-destroy[disabled]:focus,
+.btn-custom-destroy[disabled]:active,
+.btn-custom-destroy[disabled].active,
+fieldset[disabled] .btn-custom-destroy:hover,
+fieldset[disabled] .btn-custom-destroy:focus,
+fieldset[disabled] .btn-custom-destroy:active,
+fieldset[disabled] .btn-custom-destroy.active {
+    background-color: #B82C00;
+    border-color: #B82C00;
+}
+
+.btn-custom-view {
+    color: #FFFFFF;
+    background-color: #044B75;
+    border-color: #044B75;
+}
+
+.btn-custom-view:hover,
+.btn-custom-view:focus,
+.btn-custom-view:active,
+.btn-custom-view.active,
+.open .dropdown-toggle.btn-custom-view {
+    color: #FFFFFF;
+    background-color: #023B5D;
+    border-color: #044B75;
+}
+
+.btn-custom-view:active,
+.btn-custom-view.active,
+.open .dropdown-toggle.btn-custom-view {
+    background-image: none;
+}
+
+.btn-custom-view.disabled,
+.btn-custom-view[disabled],
+fieldset[disabled] .btn-custom-view,
+.btn-custom-view.disabled:hover,
+.btn-custom-view[disabled]:hover,
+fieldset[disabled] .btn-custom-view:hover,
+.btn-custom-view.disabled:focus,
+.btn-custom-view[disabled]:focus,
+fieldset[disabled] .btn-custom-view:focus,
+.btn-custom-view.disabled:active,
+.btn-custom-view[disabled]:active,
+fieldset[disabled] .btn-custom-view:active,
+.btn-custom-view.disabled.active,
+.btn-custom-view[disabled].active,
+fieldset[disabled] .btn-custom-view.active {
+    background-color: #044B75;
+    border-color: #044B75;
+}
+
+.btn-custom-view .badge {
+    color: #044B75;
+    background-color: #FFFFFF;
+}
+
+.btn-custom-success {
+    color: #FFFFFF;
+    background-color: #00813F;
+    border-color: #006733;
+}
+
+.btn-custom-success:hover,
+.btn-custom-success:focus,
+.btn-custom-success:active,
+.btn-custom-success.active,
+.open .dropdown-toggle.btn-custom-success {
+    color: #FFFFFF;
+    background-color: #006733;
+    border-color: #006733;
+}
+
+.btn-custom-success:active,
+.btn-custom-success.active,
+.open .dropdown-toggle.btn-custom-success {
+    background-image: none;
+}
+
+.btn-custom-success.disabled,
+.btn-custom-success[disabled],
+fieldset[disabled] .btn-custom-success,
+.btn-custom-success.disabled:hover,
+.btn-custom-success[disabled]:hover,
+fieldset[disabled] .btn-custom-success:hover,
+.btn-custom-success.disabled:focus,
+.btn-custom-success[disabled]:focus,
+fieldset[disabled] .btn-custom-success:focus,
+.btn-custom-success.disabled:active,
+.btn-custom-success[disabled]:active,
+fieldset[disabled] .btn-custom-success:active,
+.btn-custom-success.disabled.active,
+.btn-custom-success[disabled].active,
+fieldset[disabled] .btn-custom-success.active {
+    background-color: #00813F;
+    border-color: #006733;
+}
+
+.btn-custom-success .badge {
+    color: #00813F;
+    background-color: #FFFFFF;
+}
+
+/* Page Specific -------------- */
+/* Change Status */
+.changeStatus-wrapper {
+    border: 2px solid rgb(150,150,150);
+    padding-bottom: 10px;
+}
+.changeStatus-wrapper h4 {
+    margin-top: 0;
+}
+.changeStatus-wrapper form .row {
+    background-color: #FFFFFF !important;
+}
+.changeStatus-wrapper form label {
+    padding-left: 0;
+    padding-right: 5px;
+    text-align: left;
+}
+.box .box-body .changeStatus-wrapper form .row.btn-row {
+    padding-top: 15px;
+}
+
+.message {
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    padding: 8px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.caution-message {
+    border: 1px solid red;
+}
+.success-message {
+    border: 1px solid green;
+}

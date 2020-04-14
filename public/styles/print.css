@@ -1,0 +1,121 @@
+/* Printer Friendly Stylesheet for Frontend */
+
+*,
+*:before,
+*:after,
+*:first-letter,
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster */;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
+a[href]:after {
+    content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+
+/*
+ * Don't show links that are fragment identifiers,
+ * or use the `javascript:` pseudo protocol
+ */
+
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+    content: "";
+}
+
+pre {
+    white-space: pre-wrap !important;
+}
+
+pre,
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+/*
+ * Printing Tables:
+ * http://css-discuss.incutio.com/wiki/Printing_Tables
+ */
+
+thead {
+    display: table-header-group;
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+/**
+ * HIDE certain elements completely
+ */
+#sidebar,
+#page-header,
+#page-footer,
+.burger {
+    display: none;
+}
+
+/* Reformat Wrappers */
+
+#inner-wrapper,
+section.content-wrapper.container {
+    max-width: 100% !important;
+    padding: 0;
+    margin: 0;
+    postion: relative;
+}
+
+/* Forms */
+body#public-form section.content-wrapper {
+    padding: 0;
+    width: 100% !important;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+header.form-header {
+    padding: 5px;
+}
+form {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+fieldset {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgba(150,150,150,0.8);
+}
+form h3 {
+    background: none;
+    color: #000000;
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+    line-height: 1.0em;
+    height: 2.0em;
+    width: 100%;
+    border-bottom: 1px solid rgba(100,100,100,1.0);
+    font-size: 22px;
+}
+
+
+

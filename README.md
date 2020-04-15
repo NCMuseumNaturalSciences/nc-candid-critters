@@ -18,12 +18,12 @@ NC Candid Critters Project and Volunteer Management System
 2. Create MySQL database
 3. Rename .env.example to .env and edit accordingly
 4. Open command line
-5. Run the following commands:
---1. omposer install
---2. composer update
---3. php artisan key:generate
---4. php artisan make:auth
---5. php artisan vendor:publish
-6. Make any desired changes to the authentication system (I always split name into first and last).
---7.php artisan migrate
+5. Run the following commands:  
+    composer install  
+    composer update  
+    php artisan key:generate  
+    php artisan make:auth  
+    php artisan vendor:publish  
+6. Make any desired changes to the authentication system (I always split name into first and last).  
+    php artisan migrate  
 

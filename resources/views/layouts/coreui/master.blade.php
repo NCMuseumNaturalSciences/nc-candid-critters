@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/vendor/normalize.css') }}">
     <link rel='stylesheet' type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto'>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="{!! asset('icons/ionicons/css/ionicons.min.css') !!}">
     <link rel="stylesheet" type="text/css" href="{!! asset('coreui/vendors/css/simple-line-icons.min.css') !!}">
